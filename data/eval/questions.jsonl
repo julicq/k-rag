@@ -1,0 +1,10 @@
+{"product":"KSC","version":"15.1","question":"Какие новые возможности появились в Kaspersky Security Center 15.1?","expected":"новые возможности|изменения|обновления","url":"https://support.kaspersky.com/KSC/15.1/ru-RU/12521.htm"}
+{"product":"KSC","version":"15.1","question":"Какие требования к оперативной памяти для Сервера администрирования?","expected":"памяти|ГБ|требования","url":"https://support.kaspersky.com/KSC/15.1/ru-RU/96255.htm"}
+{"product":"KSC","version":"15.1","question":"Как настроить точки распространения в KSC?","expected":"точки распространения|настройка","url":"https://support.kaspersky.com/KSC/15.1/ru-RU/92429.htm"}
+{"product":"KSC","version":"15.1","question":"Что описано в разделе мониторинг и отчеты?","expected":"мониторинг|отчеты|функции","url":"https://support.kaspersky.com/KSC/15.1/ru-RU/179074.htm"}
+{"product":"KSC","version":"15.1","question":"Какой порт использует сервер баз данных PostgreSQL?","expected":"не знаю","url":"https://support.kaspersky.com/KSC/15.1/ru-RU/999999.htm"}
+{"product":"KATA","version":"7.1","question":"Какие изменения появились в Kaspersky Anti Targeted Attack Platform 7.1.1?","expected":"изменения|новое|обновления","url":"https://support.kaspersky.com/KATA/7.1/ru-RU/247269.htm"}
+{"product":"KATA","version":"7.1","question":"Какие программные требования к виртуальной машине для KATA?","expected":"требования|виртуальная машина","url":"https://support.kaspersky.com/KATA/7.1/ru-RU/247120.htm"}
+{"product":"KATA","version":"7.1","question":"Что такое мультитенантность в KATA?","expected":"мультитенантность|распределенное решение","url":"https://support.kaspersky.com/KATA/7.1/ru-RU/247445.htm"}
+{"product":"KATA","version":"7.1","question":"Как работать с компонентом Sandbox через веб-интерфейс?","expected":"Sandbox|веб-интерфейс","url":"https://support.kaspersky.com/KATA/7.1/ru-RU/159685.htm"}
+{"product":"KATA","version":"7.1","question":"Поддерживает ли KATA работу с базами данных Oracle?","expected":"не знаю","url":"https://support.kaspersky.com/KATA/7.1/ru-RU/999999.htm"}

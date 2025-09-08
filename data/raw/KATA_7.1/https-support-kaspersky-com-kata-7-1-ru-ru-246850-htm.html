@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="maximum-scale=1.0" />
+    <title> Обновление Kaspersky Anti Targeted Attack Platform </title>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MPK6ZG');</script>
+	<!-- End Google Tag Manager -->
+    <script type="text/javascript" src="../langs.js"></script>
+    <script type="text/javascript">
+        !function ( w, d ) {
+            var scriptsPath="/localization/";
+            if(w.location.pathname.match(/title\.htm$/)){scriptsPath="./js/"}d.writeln("\x3Cscript type='text/javascript' src='"+scriptsPath+d.documentElement.lang+".js'>\x3C/script>");
+        }( window, document );
+    </script>
+    <script type="text/javascript" src="toc.js"></script>
+    
+    <script type="text/javascript" src="aiconverter_result.js"></script>
+    <link rel="stylesheet" type='text/css' href="typography.css"/>
+    <link rel="stylesheet" type='text/css' href="styles.css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="favicon.png" type="image/png"/>
+
+            <!--[if lte IE 9]>
+                <link rel="stylesheet" type="text/css" href="bootstrap.css">
+            <![endif]-->
+            <!--[if lte IE 8]>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+            <![endif]-->
+            </head>
+
+<body id="who-content" class="no-js">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPK6ZG" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<noscript class="no-js__message">
+	<a href="https://support.microsoft.com/ru-ru/kb/3135465" class="no-js__link">Пожалуйста, включите JavaScript в браузере!</a>
+	</noscript>
+	<div class="cont">
+	<h1 id="t246850" class="heading1">Обновление Kaspersky Anti Targeted Attack Platform</h1>
+<p class="warningbody">Перед установкой пакета обновления приложения рекомендуется предварительно создать резервную копию текущего состояния каждого обновляемого сервера Central Node и загрузить ее на жесткий диск из меню администратора приложения. В случае сбоя при установке пакета обновления приложения или при необходимости переустановить Kaspersky Anti Targeted Attack Platform вы сможете воспользоваться сохраненной копией приложения.<br>Рекомендуется также ознакомиться с <a id="h299789" class="crossreferencetemplate" href="247274.htm" target="_self">ограничениями</a> для той версии, до которой вы обновляете приложение.</p>
+<p class="attentionbody">Миграция с неотказоустойчивой версии приложения на отказоустойчивую с помощью обновления не предусмотрена: если вы используете неотказоустойчивую версию приложения, при обновлении вы можете установить только неотказоустойчивую версию, и наоборот.</p>
+<p class="bodytext">Обновление приложения включает в себя следующие этапы:</p>
+<ol class="listnumber1"><li class="listnumber1">Обновление компонента Sandbox.<p class="listcontinue1">В приложении не предусмотрена процедура обновления компонента. Вам требуется <a id="h198682" class="crossreferencetemplate" href="138245.htm" target="_self">установить</a> компонент версии 7.1.</p>
+<p class="attentioncontinue1">После <a id="h198682_2" class="crossreferencetemplate" href="138245.htm" target="_self">установки компонента</a> вам нужно <a id="h248460" class="crossreferencetemplate" href="247497.htm" target="_self">указать максимальное количество одновременно запускаемых виртуальных машин</a>. По умолчанию используется значение 48.</p>
+<p class="attentioncontinue1">При установке компонента на виртуальную машину VMware ESXi вам требуется задать для нее конфигурацию, описанную в разделе <em class="emphasischaracter"><a id="h248613" class="crossreferencetemplate" href="247180.htm" target="_self">Расчеты для компонента Sandbox</a></em>.</p>
+</li><li class="listnumber1">Обновление компонента Central Node.<p class="listcontinue1">Вы можете обновить компонент одним из следующих способов:</p>
+<ul class="listbullet2"><li class="listbullet2">С версии 7.0.3 до версии 7.1.1.<p class="listcontinue2">В этом случае вам нужно выполнить одну из следующих инструкций: <a id="h243481" class="crossreferencetemplate" href="243480.htm" target="_self">Обновление Central Node, установленного на сервере</a> или <a id="h295742" class="crossreferencetemplate" href="267215.htm" target="_self">Обновление Central Node, установленного в виде кластера</a>.</p>
+<p class="listcontinue2">Обновление до версии 7.1.1 с более ранних версий приложения, чем 7.0.3, невозможно. Если вы используете более раннюю версию приложения, вам требуется последовательно обновить Central Node до версии 7.0.3: <a class="hyperlinktemplate" href="https://click.kaspersky.com/?hl=ru-RU&version=3.7.1&link=3.7.1 update&pid=KATA" target="_blank">3.7 → 3.7.1</a>, <a class="hyperlinktemplate" href="https://click.kaspersky.com/?hl=ru-RU&version=3.7.2&link=3.7.2 update&pid=KATA" target="_blank">3.7.1 → 3.7.2</a>, <a class="hyperlinktemplate" href="https://click.kaspersky.com/?hl=ru-RU&version=4.0&link=4.0 update&pid=KATA" target="_blank">3.7.2 → 4.0</a>, <a class="hyperlinktemplate" href="https://click.kaspersky.com/?hl=ru-RU&version=4.1&link=4.1 update&pid=KATA" target="_blank">4.0 → 4.1</a>, <a class="hyperlinktemplate" href="https://click.kaspersky.com/?hl=ru-RU&version=5.0&link=5.0 update&pid=KATA" target="_blank">4.1 → 5.0</a>, <a class="hyperlinktemplate" href="https://click.kaspersky.com/?hl=ru-RU&version=5.1&link=5.1 update&pid=KATA" target="_blank">5.0 → 5.1</a>, <a class="hyperlinktemplate" href="https://support.kaspersky.com/KATA/6.0/ru-RU/243480.htm" target="_blank">5.1 → 6.0</a>, <a class="hyperlinktemplate" href="https://support.kaspersky.com/KATA/6.0/ru-RU/271957.htm" target="_blank">6.0 → 6.0.2</a>, <a class="hyperlinktemplate" href="https://support.kaspersky.com/KATA/6.1/ru-RU/246850.htm" target="_blank">6.0.2 → 6.1</a>, <a class="hyperlinktemplate" href="https://support.kaspersky.com/help/KATA/7.0/ru-RU/246850.htm" target="_blank">6.1 → 7.0.3</a>.</p>
+<p class="attentioncontinue2">Если вы использовали PCN версии 7.0.3 более полугода, мы настоятельно рекомендуем перед обновлением применить скрипт fix_old_slots.sh для очистки диска сервера PCN. Вы можете получить файл скрипта и инструкцию по его применению, <a id="h134512" class="crossreferencetemplate" href="241127.htm" target="_self">обратившись в Службу технической поддержки</a>.</p>
+</li><li class="listbullet2">Если вы используете компонент версии 7.1, вам нужно <a id="h299140" class="crossreferencetemplate" href="298758.htm" target="_self">обновить его до версии 7.1.1</a>.</li></ul><p class="listcontinue1">Если вы подключили и настроили внешнее хранилище для встроенного Sensor (Embedded Sensor), после обновления вам нужно выполнить шаги инструкции <em class="emphasischaracter"><a id="h302000" class="crossreferencetemplate" href="301990.htm" target="_self">Восстановление данных на внешнем хранилище для компонента Sensor</a>.</em></p>
+</li><li class="listnumber1">Обновление компонента Sensor, установленного на отдельном сервере.<p class="listcontinue1">В приложении не предусмотрена процедура обновления компонента. Вам требуется установить компонент версии 7.1.1 с учетом <a id="h275028" class="crossreferencetemplate" href="274413.htm" target="_self">рекомендаций</a>.</p>
+</li><li class="listnumber1">Обновление компонента Endpoint Agent:<ul class="scenariolistbullet2"><li class="scenariolistbullet2"><a class="hyperlinktemplate" href="https://support.kaspersky.com/help/KESWin/12.9/ru-RU/123470.htm" target="_blank">Kaspersky Endpoint Security для Windows</a>.</li></ul><ul class="listbullet2"><li class="listbullet2"><a class="hyperlinktemplate" href="https://support.kaspersky.com/KES4Linux/12.2.0/ru-RU/287304.htm" target="_blank">Kaspersky Endpoint Security для Linux</a>.</li><li class="listbullet2"><a class="hyperlinktemplate" href="https://click.kaspersky.com/?hl=ru-RU&version=12.0.0&link=KESMac update&pid=KESMac" target="_blank">Kaspersky Endpoint Security для Mac</a>.</li></ul></li></ol><table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width= "302">
+<p class="relatedheading">В этом разделе справки</p><p class="relateditem"><a href="243480.htm" target="_self">Обновление Central Node, установленного на сервере</a></p><p class="relateditem"><a href="267215.htm" target="_self">Обновление Central Node, установленного в виде кластера</a></p><p class="relateditem"><a href="298758.htm" target="_self">Обновление Kaspersky Anti Targeted Attack Platform с версии 7.1 до версии 7.1.1</a></p><p class="relateditem"><a href="274413.htm" target="_self">Обновление Sensor, установленного на отдельном сервере</a></p><p class="relateditem"><a href="247804.htm" target="_self">Состав и объем данных, сохраняемых при обновлении приложения Kaspersky Anti Targeted Attack Platform</a></p></td>
+</tr>
+</table>
+
+
+	<a href="#" class="bt-home">В начало</a>
+	</div>
+</body>
+
+</html>

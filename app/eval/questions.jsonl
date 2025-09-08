@@ -1,0 +1,10 @@
+{"product":"KSC","version":"15.1","question":"Какой порт использует Административный сервер KSC по умолчанию?","expected":"13000","url":"https://support.kaspersky.com/KSC/15.1/ru-RU/"}
+{"product":"KSC","version":"15.1","question":"Как создать задачу обновления антивирусных баз в KSC?","expected":"задача Обновление","url":"https://support.kaspersky.com/KSC/15.1/ru-RU/"}
+{"product":"KSC","version":"15.1","question":"Где посмотреть состояние устройств в консоли KSC?","expected":"Устройства","url":"https://support.kaspersky.com/KSC/15.1/ru-RU/"}
+{"product":"KSC","version":"15.1","question":"Как развернуть Network Agent в домене Windows?","expected":"Групповая политика","url":"https://support.kaspersky.com/KSC/15.1/ru-RU/"}
+{"product":"KSC","version":"15.1","question":"Как включить оповещения по email в KSC?","expected":"уведомления по электронной почте","url":"https://support.kaspersky.com/KSC/15.1/ru-RU/"}
+{"product":"KATA","version":"7.1","question":"Что такое сэндбокс в KATA и для чего он?","expected":"песочница","url":"https://support.kaspersky.com/KATA/7.1/ru-RU/"}
+{"product":"KATA","version":"7.1","question":"Как просмотреть инциденты в KATA?","expected":"Инциденты","url":"https://support.kaspersky.com/KATA/7.1/ru-RU/"}
+{"product":"KATA","version":"7.1","question":"Какие источники телеметрии поддерживает KATA?","expected":"сетевой трафик","url":"https://support.kaspersky.com/KATA/7.1/ru-RU/"}
+{"product":"KATA","version":"7.1","question":"Как настроить интеграцию с SIEM в KATA?","expected":"SIEM","url":"https://support.kaspersky.com/KATA/7.1/ru-RU/"}
+{"product":"KATA","version":"7.1","question":"Где посмотреть отчёты по угрозам в KATA?","expected":"Отчёты","url":"https://support.kaspersky.com/KATA/7.1/ru-RU/"}

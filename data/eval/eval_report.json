@@ -1,0 +1,232 @@
+{
+  "total": 10,
+  "recall@3": 0.5,
+  "exact": 0.8,
+  "details": [
+    {
+      "question": "Какие новые возможности появились в Kaspersky Security Center 15.1?",
+      "expected": "новые возможности|изменения|обновления",
+      "source_url": "https://support.kaspersky.com/KSC/15.1/ru-RU/12521.htm",
+      "answer": "В Kaspersky Security Center 15.1 появились следующие новые возможности:\n\n- Обнаружение устройств в сети, включая существующие и новые устройства.\n- Управление доступом к облачным службам с помощью Cloud Discovery.\n- Приложения \"Лаборатории Касперского\" теперь можно развертывать центриально.\n- Настройка точек распространения и шлюзов соединений.\n- Активация приложений \"Лаборатории Касперского\" в несколько шагов.\n- Экспорт событий в SIEM-системы для анализа.\n- Обнаружение и закрытие уязвимостей в приложениях сторонних производителей.\n- Развертывание Kaspersky Security Center в облачном окружении: Amazon Web Services, Microsoft Azure, Google Cloud.\n\nСсылка на источник:\n[",
+      "sources": [
+        {
+          "url": "https://support.kaspersky.com/KSC/15.1/ru-RU/5022.htm",
+          "h1": "Справка Kaspersky Security Center 15.1",
+          "h2": null
+        },
+        {
+          "url": "https://support.kaspersky.com/KSC/15.1/ru-RU/155352.htm",
+          "h1": "Лучшие практики для поставщиков услуг",
+          "h2": null
+        },
+        {
+          "url": "https://support.kaspersky.com/KSC/15.1/ru-RU/12521.htm",
+          "h1": "Что нового",
+          "h2": null
+        }
+      ],
+      "recall@3": 1,
+      "exact": 1,
+      "elapsed_ms": 62619
+    },
+    {
+      "question": "Какие требования к оперативной памяти для Сервера администрирования?",
+      "expected": "памяти|ГБ|требования",
+      "source_url": "https://support.kaspersky.com/KSC/15.1/ru-RU/96255.htm",
+      "answer": "Не знаю.",
+      "sources": [
+        {
+          "url": "https://support.kaspersky.com/KSC/15.1/ru-RU/155352.htm",
+          "h1": "Лучшие практики для поставщиков услуг",
+          "h2": null
+        },
+        {
+          "url": "https://support.kaspersky.com/KSC/15.1/ru-RU/6374.htm",
+          "h1": null,
+          "h2": "Приложения \"Лаборатории Касперского\". Централизованное развертывание"
+        }
+      ],
+      "recall@3": 0,
+      "exact": 0,
+      "elapsed_ms": 14655
+    },
+    {
+      "question": "Как настроить точки распространения в KSC?",
+      "expected": "точки распространения|настройка",
+      "source_url": "https://support.kaspersky.com/KSC/15.1/ru-RU/92429.htm",
+      "answer": "Чтобы назначить точку распространения в KSC, необходимо:\n\n1. Выбрать устройство, которое будет выполнять роль точки распространения.\n2. Назначить устройство как точку распространения.\n3. Определить диапазон IP, который должен быть опрашиваемым точкой распространения.\n4. Добавить устройство под управлением Linux в качестве шлюза в демилитаризованной зоне или подключите устройство под управлением Linux к Серверу администрирования с помощью шлюза соединения.\n\nТакже необходимо учитывать топологию сети организации и разрабатывать типовую конфигурацию структуры групп администрирования, чтобы оптимально назначить точки распространения.",
+      "sources": [
+        {
+          "url": "https://support.kaspersky.com/KSC/15.1/ru-RU/92429.htm",
+          "h1": null,
+          "h2": "Настройка точек распространения и шлюзов соединений"
+        },
+        {
+          "url": "https://support.kaspersky.com/KSC/15.1/ru-RU/96255.htm",
+          "h1": null,
+          "h2": "Аппаратные и программные требования"
+        },
+        {
+          "url": "https://support.kaspersky.com/KSC/15.1/ru-RU/155352.htm",
+          "h1": "Лучшие практики для поставщиков услуг",
+          "h2": null
+        }
+      ],
+      "recall@3": 1,
+      "exact": 1,
+      "elapsed_ms": 40198
+    },
+    {
+      "question": "Что описано в разделе мониторинг и отчеты?",
+      "expected": "мониторинг|отчеты|функции",
+      "source_url": "https://support.kaspersky.com/KSC/15.1/ru-RU/179074.htm",
+      "answer": "В разделе мониторинг и отчеты описано создание отчета о результатах закрытия уязвимостей в приложениях (если требуется).",
+      "sources": [
+        {
+          "url": "https://support.kaspersky.com/KSC/15.1/ru-RU/96255.htm",
+          "h1": null,
+          "h2": "Аппаратные и программные требования"
+        },
+        {
+          "url": "https://support.kaspersky.com/KSC/15.1/ru-RU/184124.htm",
+          "h1": null,
+          "h2": null
+        }
+      ],
+      "recall@3": 0,
+      "exact": 1,
+      "elapsed_ms": 22960
+    },
+    {
+      "question": "Какой порт использует сервер баз данных PostgreSQL?",
+      "expected": "не знаю",
+      "source_url": "https://support.kaspersky.com/KSC/15.1/ru-RU/999999.htm",
+      "answer": "Не знаю.",
+      "sources": [
+        {
+          "url": "https://support.kaspersky.com/KSC/15.1/ru-RU/153504.htm",
+          "h1": null,
+          "h2": "Основной сценарий установки"
+        },
+        {
+          "url": "https://support.kaspersky.com/KSC/15.1/ru-RU/96255.htm",
+          "h1": null,
+          "h2": "Аппаратные и программные требования"
+        },
+        {
+          "url": "https://support.kaspersky.com/KSC/15.1/ru-RU/184124.htm",
+          "h1": null,
+          "h2": null
+        }
+      ],
+      "recall@3": 0,
+      "exact": 1,
+      "elapsed_ms": 28810
+    },
+    {
+      "question": "Какие изменения появились в Kaspersky Anti Targeted Attack Platform 7.1.1?",
+      "expected": "изменения|новое|обновления",
+      "source_url": "https://support.kaspersky.com/KATA/7.1/ru-RU/247269.htm",
+      "answer": "Изменения, появившиеся в Kaspersky Anti Targeted Attack Platform 7.1.1:\n\n- Добавлен новый тип события – USB-устройство.\n- Добавлена возможность выбрать период Последние 7 дней при поиске событий в разделе Поиск угроз.\n- Реализованы новые возможности по управлению политиками аутентификации: отслеживание неудачных попыток аутентификации и завершение неактивных пользовательских сессий.\n- Реализована возможность при добавлении правила обнаружения вторжений от \"Лаборатории Касперского\" в исключение указать условия его применения.\n- Расширен функционал журналов приложения: добавлены журналы активности для компонентов Sandbox и Sensor, а также возможность настроить срок",
+      "sources": [
+        {
+          "url": "https://support.kaspersky.com/KATA/7.1/ru-RU/246841.htm",
+          "h1": "Справка Kaspersky Anti Targeted Attack Platform",
+          "h2": null
+        },
+        {
+          "url": "https://support.kaspersky.com/KATA/7.1/ru-RU/247269.htm",
+          "h1": null,
+          "h2": "Что нового"
+        },
+        {
+          "url": "https://support.kaspersky.com/KATA/7.1/ru-RU/246850.htm",
+          "h1": "Обновление Kaspersky Anti Targeted Attack Platform",
+          "h2": null
+        }
+      ],
+      "recall@3": 1,
+      "exact": 1,
+      "elapsed_ms": 55602
+    },
+    {
+      "question": "Какие программные требования к виртуальной машине для KATA?",
+      "expected": "требования|виртуальная машина",
+      "source_url": "https://support.kaspersky.com/KATA/7.1/ru-RU/247120.htm",
+      "answer": "Не знаю.",
+      "sources": [
+        {
+          "url": "https://support.kaspersky.com/KSC/15.1/ru-RU/155352.htm",
+          "h1": "Лучшие практики для поставщиков услуг",
+          "h2": null
+        },
+        {
+          "url": "https://support.kaspersky.com/KSC/15.1/ru-RU/184124.htm",
+          "h1": null,
+          "h2": null
+        }
+      ],
+      "recall@3": 0,
+      "exact": 0,
+      "elapsed_ms": 19537
+    },
+    {
+      "question": "Что такое мультитенантность в KATA?",
+      "expected": "мультитенантность|распределенное решение",
+      "source_url": "https://support.kaspersky.com/KATA/7.1/ru-RU/247445.htm",
+      "answer": "Мультитенантность в KATA - это режим работы, при котором приложение используется для защиты инфраструктуры нескольких организаций или филиалов одной организации (также называемых \"тенантов\") одновременно. В этом режиме каждый тенант может работать с приложением независимо от других тенантов, а поставщик услуг может работать с данными нескольких тенантов.",
+      "sources": [
+        {
+          "url": "https://support.kaspersky.com/KATA/7.1/ru-RU/247445.htm",
+          "h1": "Распределенное решение и мультитенантность",
+          "h2": null
+        },
+        {
+          "url": "https://support.kaspersky.com/KATA/7.1/ru-RU/226747.htm",
+          "h1": "Лицензирование приложения",
+          "h2": null
+        }
+      ],
+      "recall@3": 1,
+      "exact": 1,
+      "elapsed_ms": 29189
+    },
+    {
+      "question": "Как работать с компонентом Sandbox через веб-интерфейс?",
+      "expected": "Sandbox|веб-интерфейс",
+      "source_url": "https://support.kaspersky.com/KATA/7.1/ru-RU/159685.htm",
+      "answer": "Чтобы работать с компонентом Sandbox через веб-интерфейс, необходимо:\n\n1. Войти в веб-интерфейс Sandbox на сервере с компонентом Sandbox.\n2. Ввести имя пользователя и пароль администратора компонента Sandbox, которые были заданы при установке компонента Sandbox.\n3. Убедиться, что браузер не модифицирует заголовок Referrer HTTP-запроса POST.\n4. Проверить параметры прокси-сервера, если соединение с веб-интерфейсом осуществляется через прокси-сервер.\n\nСоответствующие шаги описаны на странице https://support.kaspersky.com/KATA/7.1/ru-RU/159685.htm [2].",
+      "sources": [
+        {
+          "url": "https://support.kaspersky.com/KATA/7.1/ru-RU/159685.htm",
+          "h1": "Работа с компонентом Sandbox через веб-интерфейс",
+          "h2": null
+        }
+      ],
+      "recall@3": 1,
+      "exact": 1,
+      "elapsed_ms": 41748
+    },
+    {
+      "question": "Поддерживает ли KATA работу с базами данных Oracle?",
+      "expected": "не знаю",
+      "source_url": "https://support.kaspersky.com/KATA/7.1/ru-RU/999999.htm",
+      "answer": "Не знаю.",
+      "sources": [
+        {
+          "url": "https://support.kaspersky.com/KSC/15.1/ru-RU/96255.htm",
+          "h1": null,
+          "h2": "Аппаратные и программные требования"
+        },
+        {
+          "url": "https://support.kaspersky.com/KSC/15.1/ru-RU/153504.htm",
+          "h1": null,
+          "h2": "Основной сценарий установки"
+        }
+      ],
+      "recall@3": 0,
+      "exact": 1,
+      "elapsed_ms": 16961
+    }
+  ]
+}

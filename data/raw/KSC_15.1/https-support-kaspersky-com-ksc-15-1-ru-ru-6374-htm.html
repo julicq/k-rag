@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru-RU" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="maximum-scale=1.0">
+    <title> Приложения &quot;Лаборатории Касперского&quot;. Централизованное развертывание </title>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MPK6ZG');</script>
+	<!-- End Google Tag Manager -->
+    <script type="text/javascript" src="../langs.js"></script>
+    <script type="text/javascript">
+        !function ( w, d ) {
+            var scriptsPath="/localization/";
+            if(w.location.pathname.match(/title\.htm$/)){scriptsPath="./js/"}d.writeln("\x3Cscript type='text/javascript' src='"+scriptsPath+d.documentElement.lang+".js'>\x3C/script>");
+        }( window, document );
+    </script>	
+    <script type="text/javascript" src="toc.js"></script>
+    
+    <script type="text/javascript" src="aiconverter_result.js"></script>
+    <link rel="stylesheet" type='text/css' href="typography.css">
+    <link rel="stylesheet" type='text/css' href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/png">
+
+            <!--[if lte IE 9]>
+                <link rel="stylesheet" type="text/css" href="bootstrap.css">
+            <![endif]-->
+            <!--[if lte IE 8]>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+            <![endif]-->
+            </head>
+
+<body id="who-content" class="no-js" onload="if (isTOCLoaded()) {expand('144300');highlight('6374')}">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPK6ZG" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<noscript class="no-js__message">
+	<a href="https://support.microsoft.com/ru-ru/kb/3135465" class="no-js__link">Пожалуйста, включите JavaScript в браузере!</a>
+	</noscript>
+	<div class="cont">
+	<h2 id="t6374" class="heading2">Приложения &quot;Лаборатории Касперского&quot;. Централизованное развертывание</h2>
+<p class="bodytext">В этом разделе описаны способы удаленной установки приложений &quot;Лаборатории Касперского&quot; и их удаления с устройств сети.</p>
+<p class="attentionbody">Перед началом установки приложений на клиентские устройства требуется убедиться в том, что аппаратное и программное обеспечение устройств соответствует требованиям.</p>
+<p class="bodytext">Связь Сервера администрирования с клиентскими устройствами обеспечивает Агент администрирования. Поэтому его необходимо установить на каждое клиентское устройство, которое будет подключено к системе удаленного централизованного управления. На устройстве, где установлен Сервер администрирования, может использоваться только серверная версия Агента администрирования. Она входит в состав Сервера администрирования и устанавливается и удаляется вместе с ним. Устанавливать Агент администрирования на это устройство не требуется.</p>
+<p class="bodytext">Установка Агента администрирования осуществляется точно так же, как и установка приложений, и может быть проведена как удаленно, так и локально. При централизованной установке приложений безопасности через Консоль администрирования вы можете установить Агент администрирования совместно с приложениями безопасности.</p>
+<p class="bodytext">Агенты администрирования могут отличаться в зависимости от приложений &quot;Лаборатории Касперского&quot;, с которыми они работают. В некоторых случаях возможна только локальная установка Агента администрирования (подробнее см. в руководствах к соответствующим приложениям). Вам нужно установить Агент администрирования на клиентское устройство только один раз.</p>
+<p class="bodytext">Управление <a class="hyperlinktemplate" href="https://support.kaspersky.com/KSC/15.1/ru-RU/172903.htm" target="_blank">программами &quot;Лаборатории Касперского&quot;</a> через Консоль администрирования выполняется при помощи плагинов управления. Поэтому для получения доступа к управлению приложением через Kaspersky Security Center плагин управления этого приложения должен быть установлен на рабочее место администратора.</p>
+<p class="bodytext">Вы можете выполнить удаленную установку приложений с рабочего места администратора в главном окне приложения Kaspersky Security Center.</p>
+<p class="bodytext"></p>
+<p class="listheading">Для удаленной установки программного обеспечения следует создать задачу удаленной установки.</p>
+<p class="bodytext">Сформированная задача удаленной установки будет запускаться на выполнение в соответствии со своим расписанием. Вы можете прервать процедуру установки, остановив выполнение задачи вручную.</p>
+<p class="attentionbody">Если при удаленной установке приложения возникает ошибка, убедитесь, что выполнены <a id="h13488" class="crossreferencetemplate" href="12883.htm" target="_self">требования к подготовке устройства</a>.</p>
+<p class="bodytext">Вы можете отслеживать процесс установки приложений безопасности &quot;Лаборатории Касперского&quot; в сети с помощью отчета о развертывании.</p>
+<p class="attentionbody">Подробную информацию об управлении перечисленными приложениями через Kaspersky Security Center см. в руководствах к соответствующим приложениям.</p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="321">
+<p class="relatedheading">В этом разделе</p><p class="relateditem"><a href="180093.htm" target="_self">Замещение приложений безопасности сторонних производителей</a></p><p class="relateditem"><a href="6385.htm" target="_self">Установка приложений с помощью задачи удаленной установки</a></p><p class="relateditem"><a href="6390.htm" target="_self">Установка приложений с помощью мастера удаленной установки</a></p><p class="relateditem"><a href="269226.htm" target="_self">Работа с плагинами управления</a></p><p class="relateditem"><a href="13065.htm" target="_self">Просмотр отчета о развертывании защиты</a></p><p class="relateditem"><a href="6389.htm" target="_self">Удаленная деинсталляция приложений</a></p><p class="relateditem"><a href="13068.htm" target="_self">Работа с инсталляционными пакетами</a></p><p class="relateditem"><a href="55959.htm" target="_self">Получение актуальных версий приложений</a></p><p class="relateditem"><a href="12883.htm" target="_self">Подготовка устройства под управлением Windows к удаленной установке</a></p><p class="relateditem"><a href="137593.htm" target="_self">Подготовка устройства с операционной системой Linux и удаленная установка Агента администрирования на устройство с операционной системой Linux</a></p><p class="relateditem"><a href="199934.htm" target="_self">Подготовка устройства с операционной системой macOS к удаленной установке Агента администрирования</a></p></td>
+<td>
+<p class="relatedheading">См. также:</p><p class="relateditem"><a href="153504.htm" target="_self">Основной сценарий установки</a></p></td>
+</tr>
+</table>
+
+
+	<a href="#" class="bt-home">В начало</a>
+	</div>
+</body>
+
+</html>

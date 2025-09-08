@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru-RU" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="maximum-scale=1.0">
+    <title> Замещение приложений безопасности сторонних производителей </title>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MPK6ZG');</script>
+	<!-- End Google Tag Manager -->
+    <script type="text/javascript" src="../langs.js"></script>
+    <script type="text/javascript">
+        !function ( w, d ) {
+            var scriptsPath="/localization/";
+            if(w.location.pathname.match(/title\.htm$/)){scriptsPath="./js/"}d.writeln("\x3Cscript type='text/javascript' src='"+scriptsPath+d.documentElement.lang+".js'>\x3C/script>");
+        }( window, document );
+    </script>	
+    <script type="text/javascript" src="toc.js"></script>
+    
+    <script type="text/javascript" src="aiconverter_result.js"></script>
+    <link rel="stylesheet" type='text/css' href="typography.css">
+    <link rel="stylesheet" type='text/css' href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/png">
+
+            <!--[if lte IE 9]>
+                <link rel="stylesheet" type="text/css" href="bootstrap.css">
+            <![endif]-->
+            <!--[if lte IE 8]>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+            <![endif]-->
+            </head>
+
+<body id="who-content" class="no-js" onload="if (isTOCLoaded()) {expand('6374');expand('144300');highlight('180093')}">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPK6ZG" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<noscript class="no-js__message">
+	<a href="https://support.microsoft.com/ru-ru/kb/3135465" class="no-js__link">Пожалуйста, включите JavaScript в браузере!</a>
+	</noscript>
+	<div class="cont">
+	<h3 id="t180093" class="heading3">Замещение приложений безопасности сторонних производителей</h3>
+<p class="bodytext">Для установки приложений безопасности &quot;Лаборатории Касперского&quot; средствами Kaspersky Security Center может потребоваться удалить стороннее программное обеспечение, несовместимое с устанавливаемым приложением. Kaspersky Security Center предоставляет несколько способов удаления приложений сторонних производителей.</p>
+<p class="introheading">Удаление несовместимых приложений с помощью приложения установки</p>
+<p class="attentionbody">Этот параметр доступен только в Консоли администрирования на основе консоли управления Microsoft Management Console.</p>
+<p class="bodytext">Метод удаления несовместимых приложений поддерживается различными типами установки. Перед установкой приложения безопасности несовместимые с ним приложения удаляются автоматически, если в окне свойств инсталляционного пакета приложений безопасности (раздел <span class="guicharacter">Несовместимые приложения</span>) выбран параметр <span class="guicharacter">Удалять несовместимые приложения автоматически</span>.</p>
+<p class="introheading">Удаление несовместимых приложений при настройке удаленной установки приложения</p>
+<p class="bodytext">Вы можете включить параметр <span class="guicharacter">Удалять несовместимые приложения автоматически</span> во время настройки удаленной установки приложения безопасности. В Консоли администрирования на основе консоли Microsoft Management Console (MMC) этот параметр доступен в мастере удаленной установки. В приложении Kaspersky Security Center Web Console этот параметр можно найти в мастере развертывания защиты. Если этот параметр включен, Kaspersky Security Center удаляет несовместимые приложения перед установкой приложения безопасности на управляемое устройство.</p>
+<p class="bodytext">Инструкции:</p>
+<ul class="listbullet1"><li class="listbullet1">Консоль администрирования: <a id="h267027" class="crossreferencetemplate" href="92468.htm" target="_self">Удаление несовместимых приложений с помощью мастера удаленной установки</a>.</li><li class="listbullet1">Kaspersky Security Center Web Console: <a id="h180108" class="englishcrossreferencetemplate" href="178752.htm" target="_self">Удаление несовместимых приложений перед установкой</a>.</li></ul><p class="introheading">Удаление несовместимых приложений с помощью отдельной задачи</p>
+<p class="bodytext">Для удаления несовместимых приложений используется задача <span class="guicharacter">Удаленная деинсталляция приложений</span>. Задачу следует запускать на устройствах перед задачей установки приложения безопасности. Например, в задаче установки можно выбрать расписание типа <span class="guicharacter">По завершении другой задачи</span>, где другой задачей является задача <span class="guicharacter">Удаленная деинсталляция приложения</span>.</p>
+<p class="bodytext">Этот способ удаления целесообразно использовать в случаях, если инсталлятор приложения безопасности не может успешно удалить какое-либо из несовместимых приложений.</p>
+<p class="bodytext">Инструкции для Консоли администрирования: <a id="h4114" class="crossreferencetemplate" href="3773.htm" target="_self">Создание задачи</a>. </p>
+
+
+	<a href="#" class="bt-home">В начало</a>
+	</div>
+</body>
+
+</html>

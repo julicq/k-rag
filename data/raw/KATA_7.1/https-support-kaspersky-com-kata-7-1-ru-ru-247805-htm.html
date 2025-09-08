@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="maximum-scale=1.0" />
+    <title> Использование Kaspersky Anti Targeted Attack Platform API KATA и KEDR </title>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MPK6ZG');</script>
+	<!-- End Google Tag Manager -->
+    <script type="text/javascript" src="../langs.js"></script>
+    <script type="text/javascript">
+        !function ( w, d ) {
+            var scriptsPath="/localization/";
+            if(w.location.pathname.match(/title\.htm$/)){scriptsPath="./js/"}d.writeln("\x3Cscript type='text/javascript' src='"+scriptsPath+d.documentElement.lang+".js'>\x3C/script>");
+        }( window, document );
+    </script>
+    <script type="text/javascript" src="toc.js"></script>
+    
+    <script type="text/javascript" src="aiconverter_result.js"></script>
+    <link rel="stylesheet" type='text/css' href="typography.css"/>
+    <link rel="stylesheet" type='text/css' href="styles.css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="favicon.png" type="image/png"/>
+
+            <!--[if lte IE 9]>
+                <link rel="stylesheet" type="text/css" href="bootstrap.css">
+            <![endif]-->
+            <!--[if lte IE 8]>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+            <![endif]-->
+            </head>
+
+<body id="who-content" class="no-js">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPK6ZG" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<noscript class="no-js__message">
+	<a href="https://support.microsoft.com/ru-ru/kb/3135465" class="no-js__link">Пожалуйста, включите JavaScript в браузере!</a>
+	</noscript>
+	<div class="cont">
+	<h1 id="t247805" class="heading1">Использование Kaspersky Anti Targeted Attack Platform API KATA и KEDR</h1>
+<p class="bodytext">Вы можете <a id="h248854" class="crossreferencetemplate" href="247806.htm" target="_self">настроить интеграцию Kaspersky Anti Targeted Attack Platform с внешними системами</a>, чтобы <a id="h227653" class="crossreferencetemplate" href="227245.htm" target="_self">управлять действиями по реагированию на угрозы</a>, <a id="h248853" class="crossreferencetemplate" href="247807.htm" target="_self">проверять хранящиеся в этих системах файлы</a> и <a id="h181504" class="crossreferencetemplate" href="181465.htm" target="_self">предоставлять внешним системам доступ к информации обо всех обнаружениях</a> и <a id="h250544" class="crossreferencetemplate" href="248949.htm" target="_self">событиях</a> приложения.</p>
+<p class="bodytext">Вызовы методов API доступны только для авторизованных внешних систем. Для авторизации администратору приложения необходимо создать запрос на <a id="h248854_2" class="crossreferencetemplate" href="247806.htm" target="_self">интеграцию внешней системы с приложением</a>. После этого администратор должен <a id="h248634" class="crossreferencetemplate" href="247562.htm" target="_self">обработать запрос в веб-интерфейсе Kaspersky Anti Targeted Attack Platform</a>.</p>
+<p class="bodytext">Если вы <a id="h240666" class="crossreferencetemplate" href="176843.htm" target="_self">развернули компоненты Central Node и Sensor в виде кластера</a>, вы можете настроить отказоустойчивую интеграцию с внешней системой одним из следующих способов:</p>
+<ul class="listbullet1"><li class="listbullet1">Использовать функцию Round Robin.</li><li class="listbullet1">Настроить параметры внешней системы таким образом, чтобы при возникновении таймаута внешняя система переключалась между IP-адресами серверов кластера.</li></ul><p class="procedureheading">Чтобы настроить отказоустойчивую интеграцию с внешней системой с помощью функции Round Robin:</p>
+<ol class="listnumber1"><li class="listnumber1">Настройте на сервере DNS функцию Round Robin для доменного имени, соответствующего кластеру Central Node.</li><li class="listnumber1">В параметрах почтового сервера укажите это доменное имя.</li></ol><p class="bodytext">Интеграция с внешней системой будет настроена по доменному имени. Внешняя система обратится к случайному серверу кластера. При отказе этого сервера внешняя система будет обращаться к другому работоспособному серверу кластера.</p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width= "302">
+<p class="relatedheading">В этом разделе справки</p><p class="relateditem"><a href="247806.htm" target="_self">Интеграция внешней системы с Kaspersky Anti Targeted Attack Platform</a></p><p class="relateditem"><a href="247807.htm" target="_self">API для проверки объектов внешних систем</a></p><p class="relateditem"><a href="181465.htm" target="_self">API для получения внешними системами информации об алертах</a></p><p class="relateditem"><a href="248949.htm" target="_self">API для получения внешними системами информации о событиях приложения</a></p><p class="relateditem"><a href="227245.htm" target="_self">API для управления действиями по реагированию на угрозы</a></p></td>
+</tr>
+</table>
+
+
+	<a href="#" class="bt-home">В начало</a>
+	</div>
+</body>
+
+</html>

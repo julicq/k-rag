@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru-RU" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="maximum-scale=1.0">
+    <title> О настройке экспорта событий в SIEM-системе </title>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MPK6ZG');</script>
+	<!-- End Google Tag Manager -->
+    <script type="text/javascript" src="../langs.js"></script>
+    <script type="text/javascript">
+        !function ( w, d ) {
+            var scriptsPath="/localization/";
+            if(w.location.pathname.match(/title\.htm$/)){scriptsPath="./js/"}d.writeln("\x3Cscript type='text/javascript' src='"+scriptsPath+d.documentElement.lang+".js'>\x3C/script>");
+        }( window, document );
+    </script>	
+    <script type="text/javascript" src="toc.js"></script>
+    
+    <script type="text/javascript" src="aiconverter_result.js"></script>
+    <link rel="stylesheet" type='text/css' href="typography.css">
+    <link rel="stylesheet" type='text/css' href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/png">
+
+
+            <!--[if lte IE 9]>
+                <link rel="stylesheet" type="text/css" href="bootstrap.css">
+            <![endif]-->
+            <!--[if lte IE 8]>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+            <![endif]-->
+            </head>
+
+<body id="who-content" class="no-js" onload="if (isTOCLoaded()) {expand('151332');expand('144300');highlight('151335')}">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPK6ZG" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<noscript class="no-js__message">
+	<a href="https://support.microsoft.com/ru-ru/kb/3135465" class="no-js__link">Пожалуйста, включите JavaScript в браузере!</a>
+	</noscript>
+	<div class="cont">
+	<h3 id="t151335" class="heading3">О настройке экспорта событий в SIEM-системе</h3>
+<p class="spacer"></p>
+<p class="showhideparagraph"><a class="jumptemplate" href="javascript:showAll('expandingblock')" target="_self">Развернуть все</a> | <a class="jumptemplate" href="javascript:hideAll('expandingblock')" target="_self">Свернуть все</a></p>
+<p class="bodytext">В процедуре экспорта событий из Kaspersky Security Center во внешние SIEM-системы участвуют две стороны: отправитель событий – Kaspersky Security Center и получатель событий – SIEM-система. Экспорт событий необходимо настроить в используемой SIEM-системе и в Kaspersky Security Center.</p>
+<p class="bodytext">Настройки, выполняемые в SIEM-системе, зависят от того, какую систему вы используете. В общем случае для всех SIEM-систем необходимо настроить приемник сообщений и, при необходимости, анализатор сообщений, для того чтобы разложить полученные сообщения на поля.</p>
+<p class="introheading">Настройка приемника сообщений</p>
+<p class="listheading">Для SIEM-системы необходимо настроить приемник для получения событий, отправляемых Kaspersky Security Center. В общем случае в SIEM-системе необходимо указать следующие параметры:</p>
+<ul class="listbullet1"><li class="listbullet1"><span class="boldcharacter"><a id="h151587" class="expandingblocktemplate" href="javascript:toggleBlock('151587')" target="_self">Протокол экспорта или тип входных данных</a></span><div id="d151587" class="expandingblock" style="display:none"><p class="settingdescr">Протокол передачи сообщений, TCP/IP или UDP. Необходимо указать тот же протокол, который был выбран в Kaspersky Security Center для передачи событий.</p>
+</div></li><li class="listbullet1"><span class="boldcharacter"><a id="h151589" class="expandingblocktemplate" href="javascript:toggleBlock('151589')" target="_self">Порт</a></span><div id="d151589" class="expandingblock" style="display:none"><p class="settingdescr">Номер порта для подключения к Kaspersky Security Center. Необходимо указать тот же номер порта, который был выбран в Kaspersky Security Center для передачи событий.</p>
+</div></li><li class="listbullet1"><span class="boldcharacter"><a id="h151591" class="expandingblocktemplate" href="javascript:toggleBlock('151591')" target="_self">Протокол передачи сообщений или тип исходных данных</a></span><div id="d151591" class="expandingblock" style="display:none"><p class="settingdescr">Протокол, используемый для экспорта событий в SIEM-систему. Это может являться одним из стандартных протоколов: Syslog, CEF или LEEF. SIEM-система выбирает анализатор событий, соответствующий указанному протоколу.</p>
+</div></li></ul><p class="bodytext">В зависимости от используемой SIEM-системы может потребоваться указать дополнительные параметры приемника сообщений.</p>
+<p class="bodytext">На рисунке ниже приведен пример настройки приемника в ArcSight.</p>
+<p class="picture"><img id="f151352" src="unloc_arcsight.png" class="linkedpngfiletemplate" alt="Параметры вкладки Конфигурация: имя – tcp cef, свойство IP/Host – Все, порт – 616, кодировка – UTF8, тип источника – CEF." vspace="0" hspace="0" align="bottom" border="0"></p>
+<p class="picturename">Настройка приемника в ArcSight</p>
+<p class="introheading">Анализатор сообщений</p>
+<p class="bodytext">Экспортируемые события передаются в SIEM-систему в виде сообщений. Затем к этим сообщениям применяется анализатор, для того чтобы информация о событиях была должным образом передана в SIEM-систему. Анализатор сообщений встроен в SIEM-систему; он используется для разбиения сообщения на поля, такие как идентификатор сообщения, уровень важности, описание, параметры. В результате SIEM-система имеет возможность выполнять обработку событий, полученных из Kaspersky Security Center, таким образом, чтобы они сохранялись в базе данных SIEM-системы.</p>
+<p class="bodytext"></p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td>
+<p class="relatedheading">См. также:</p><p class="relateditem"><a href="151328.htm" target="_self">Настройка экспорта событий в SIEM-системы</a></p></td>
+</tr>
+</table>
+
+
+	<a href="#" class="bt-home">В начало</a>
+	</div>
+</body>
+
+</html>

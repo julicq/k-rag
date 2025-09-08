@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="maximum-scale=1.0" />
+    <title> Работа с компонентом Sandbox через веб-интерфейс </title>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MPK6ZG');</script>
+	<!-- End Google Tag Manager -->
+    <script type="text/javascript" src="../langs.js"></script>
+    <script type="text/javascript">
+        !function ( w, d ) {
+            var scriptsPath="/localization/";
+            if(w.location.pathname.match(/title\.htm$/)){scriptsPath="./js/"}d.writeln("\x3Cscript type='text/javascript' src='"+scriptsPath+d.documentElement.lang+".js'>\x3C/script>");
+        }( window, document );
+    </script>
+    <script type="text/javascript" src="toc.js"></script>
+    
+    <script type="text/javascript" src="aiconverter_result.js"></script>
+    <link rel="stylesheet" type='text/css' href="typography.css"/>
+    <link rel="stylesheet" type='text/css' href="styles.css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="favicon.png" type="image/png"/>
+
+
+            <!--[if lte IE 9]>
+                <link rel="stylesheet" type="text/css" href="bootstrap.css">
+            <![endif]-->
+            <!--[if lte IE 8]>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+            <![endif]-->
+            </head>
+
+<body id="who-content" class="no-js">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPK6ZG" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<noscript class="no-js__message">
+	<a href="https://support.microsoft.com/ru-ru/kb/3135465" class="no-js__link">Пожалуйста, включите JavaScript в браузере!</a>
+	</noscript>
+	<div class="cont">
+	<h1 id="t159685" class="heading1">Работа с компонентом Sandbox через веб-интерфейс</h1>
+<p class="bodytext">Веб-интерфейс Sandbox расположен на сервере с компонентом Sandbox.</p>
+<p class="warningbody">Веб-интерфейс Sandbox защищен от <em class="emphasischaracter"><a id="h270634" class="expandingblocktemplate" href="javascript:toggleBlock('270634')" target="_self">CSRF-атак</a></em> и работает только в том случае, если браузер пользователя веб-интерфейса предоставляет заголовок Referrer HTTP-запроса POST. Убедитесь, что браузер, который вы используете для работы с веб-интерфейсом Sandbox, не модифицирует заголовок Referrer HTTP-запроса POST. Если соединение с веб-интерфейсом осуществляется через прокси-сервер вашей организации, проверьте параметры и убедитесь, что прокси-сервер не модифицирует заголовок Referrer HTTP-запроса POST.</p>
+<div id="d270634" class="expandingblock" style="display:none"><p class="bodytext">Cross-Site Request Forgery (также &quot;XSRF-атака&quot;). Атака на пользователей веб-сайтов, использующая уязвимости HTTP-протокола. Атака позволяет производить действия от имени авторизованного пользователя уязвимого веб-сайта. Например, от имени авторизованного пользователя уязвимого веб-сайта злоумышленник может тайно отправлять запрос на сервер сторонней платежной системы для перевода денег на счет злоумышленника.</p>
+</div><p class="procedureheading">Чтобы начать работу в веб-интерфейсе Sandbox:</p>
+<ol class="listnumber1"><li class="listnumber1">В браузере на любом компьютере, на котором разрешен доступ к серверу с компонентом Sandbox, введите IP-адрес сервера с компонентом Sandbox.<p class="listcontinue1">Откроется окно ввода учетных данных администратора компонента Sandbox.</p>
+</li><li class="listnumber1">Введите имя пользователя и пароль администратора компонента Sandbox, который вы задали при установке компонента Sandbox.</li></ol><p class="bodytext">Вы можете начать работу в веб-интерфейсе Sandbox.</p>
+<p class="attentionbody">Количество одновременных сеансов работы с Sandbox под одной учетной записью ограничено одним IP-адресом. При попытке входа в Sandbox под этим же именем пользователя с другого IP-адреса, первый сеанс работы с Sandbox завершается.</p>
+<p class="bodytext">Если вы используете несколько серверов с компонентом Sandbox, производите настройку параметров каждого компонента Sandbox из веб-интерфейса Sandbox этого сервера.</p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width= "302">
+<p class="relatedheading">В этом разделе справки</p><p class="relateditem"><a href="161634.htm" target="_self">Обновление баз компонента Sandbox</a></p><p class="relateditem"><a href="247475.htm" target="_self">Настройка соединения компонентов Sandbox и Central Node</a></p><p class="relateditem"><a href="161840.htm" target="_self">Настройка сетевых интерфейсов компонента Sandbox</a></p><p class="relateditem"><a href="297782.htm" target="_self">Политики аутентификации на Sandbox</a></p><p class="relateditem"><a href="247496.htm" target="_self">Установка даты и времени системы Sandbox</a></p><p class="relateditem"><a href="245731.htm" target="_self">Установка и настройка образов операционных систем и приложений для работы компонента Sandbox</a></p><p class="relateditem"><a href="246716.htm" target="_self">Работа с образами операционных систем и приложений в Хранилище Sandbox</a></p><p class="relateditem"><a href="246708.htm" target="_self">Работа с шаблонами виртуальных машин</a></p><p class="relateditem"><a href="246707.htm" target="_self">Управление виртуальными машинами</a></p><p class="relateditem"><a href="247497.htm" target="_self">Установка максимального количества одновременно запускаемых виртуальных машин</a></p><p class="relateditem"><a href="251000.htm" target="_self">Изменение количества лицензионных ключей для виртуальной машины с пользовательским образом операционной системы</a></p><p class="relateditem"><a href="247499.htm" target="_self">Экспорт параметров Sandbox</a></p><p class="relateditem"><a href="247500.htm" target="_self">Импорт параметров Sandbox</a></p><p class="relateditem"><a href="247501.htm" target="_self">Перезагрузка сервера Sandbox</a></p><p class="relateditem"><a href="247502.htm" target="_self">Выключение сервера Sandbox</a></p><p class="relateditem"><a href="247504.htm" target="_self">Изменение пароля учетной записи администратора Sandbox</a></p></td>
+</tr>
+</table>
+
+
+	<a href="#" class="bt-home">В начало</a>
+	</div>
+</body>
+
+</html>

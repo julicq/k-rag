@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru-RU" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="maximum-scale=1.0">
+    <title> Сценарий: настройка защиты сети </title>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MPK6ZG');</script>
+	<!-- End Google Tag Manager -->
+    <script type="text/javascript" src="../langs.js"></script>
+    <script type="text/javascript">
+        !function ( w, d ) {
+            var scriptsPath="/localization/";
+            if(w.location.pathname.match(/title\.htm$/)){scriptsPath="./js/"}d.writeln("\x3Cscript type='text/javascript' src='"+scriptsPath+d.documentElement.lang+".js'>\x3C/script>");
+        }( window, document );
+    </script>	
+    <script type="text/javascript" src="toc.js"></script>
+    
+    <script type="text/javascript" src="aiconverter_result.js"></script>
+    <link rel="stylesheet" type='text/css' href="typography.css">
+    <link rel="stylesheet" type='text/css' href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/png">
+
+            <!--[if lte IE 9]>
+                <link rel="stylesheet" type="text/css" href="bootstrap.css">
+            <![endif]-->
+            <!--[if lte IE 8]>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+            <![endif]-->
+            </head>
+
+<body id="who-content" class="no-js" onload="if (isTOCLoaded()) {expand('171272');expand('144300');highlight('179344')}">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPK6ZG" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<noscript class="no-js__message">
+	<a href="https://support.microsoft.com/ru-ru/kb/3135465" class="no-js__link">Пожалуйста, включите JavaScript в браузере!</a>
+	</noscript>
+	<div class="cont">
+	<h3 id="t179344" class="heading3">Сценарий: настройка защиты сети</h3>
+<p class="bodytext"></p>
+<p class="bodytext">Мастер первоначальной настройки создает политики и задачи с параметрами по умолчанию. Эти параметры могут оказаться не оптимальными или даже запрещенными в организации. Поэтому рекомендуется настроить эти политики и задачи и создать дополнительные политики и задачи, если это необходимо для вашей сети.</p>
+<p class="introheading">Предварительные требования</p>
+<p class="bodytext">Прежде чем приступать, убедитесь, что вы выполнили следующее:</p>
+<ul class="listbullet1"><li class="listbullet1"><a id="h166837" class="englishcrossreferencetemplate" href="13054.htm" target="_self">Установили Сервер администрирования Kaspersky Security Center.</a> </li><li class="listbullet1"><a id="h166791" class="englishcrossreferencetemplate" href="166765.htm" target="_self">Установили Kaspersky Security Center Web Console</a> (если требуется).</li><li class="listbullet1">Выполнили <a id="h160723" class="crossreferencetemplate" href="153504.htm" target="_self">основной сценарий установки Kaspersky Security Center</a>.</li><li class="listbullet1"><a id="h175845" class="englishcrossreferencetemplate" href="171285.htm" target="_self">Мастер первоначальной настройки</a> завершен или следующие политики и задачи созданы вручную в группе администрирования <span class="guicharacter">Управляемые устройства</span>:<ul class="listbullet2"><li class="listbullet2">политика Kaspersky Endpoint Security;</li><li class="listbullet2">групповая задача обновления Kaspersky Endpoint Security;</li><li class="listbullet2">политика Агента администрирования;</li><li class="listbullet2">задача <em class="emphasischaracter">Поиск уязвимостей и требуемых обновлений</em>.</li></ul></li></ul><p class="listheading">Настройка защиты сети состоит из следующих этапов:</p>
+<ol class="scenariolistnumber"><li class="scenariolistnumber">Настройка и распространение политик и профилей политик для приложений &quot;Лаборатории Касперского&quot;<p class="scenariolistcontinue">Для настройки и распространения параметров приложений &quot;Лаборатории Касперского&quot;, установленных на управляемых устройствах, можно использовать <a id="h176365" class="crossreferencetemplate" href="166721.htm" target="_self">два различных подхода управления безопасностью</a>: ориентированный на пользователей и ориентированный на устройства. Можно комбинировать эти два подхода. Для реализации <a id="h177202" class="englishcrossreferencetemplate" href="177128.htm" target="_self">ориентированного на устройства</a> метода управления безопасностью подходят средства Консоли администрирования на основе консоли управления Microsoft Management Console (MMC) и Kaspersky Security Center Web Console. Для реализации <a id="h177192" class="englishcrossreferencetemplate" href="177180.htm" target="_self">ориентированного на пользователей</a> метода управления безопасностью подходит только Kaspersky Security Center Web Console.</p> </li><li class="scenariolistnumber">Настройка задач для удаленного управления приложениями &quot;Лаборатории Касперского&quot;<p class="scenariolistcontinue">Проверьте задачи, созданные с помощью мастера первоначальной настройки, и при необходимости оптимизируйте их параметры.</p> <p class="scenariolistcontinue">Инструкции:</p> <ul class="scenariolistbullet2"><li class="scenariolistbullet2">Консоль администрирования:<ul class="scenariolistbullet3"><li class="scenariolistbullet3"><a id="h174088" class="crossreferencetemplate" href="92425.htm" target="_self">Настройка групповой задачи обновления Kaspersky Endpoint Security.</a></li><li class="scenariolistbullet3"><a id="h179346" class="crossreferencetemplate" href="92427.htm" target="_self">Настройка расписания задачи Поиск уязвимостей и требуемых обновлений.</a></li></ul></li><li class="scenariolistbullet2">Kaspersky Security Center Web Console:<ul class="scenariolistbullet3"><li class="scenariolistbullet3"><a id="h180031" class="englishcrossreferencetemplate" href="180029.htm" target="_self">Настройка групповой задачи обновления Kaspersky Endpoint Security.</a></li><li class="scenariolistbullet3"><a id="h182661" class="englishcrossreferencetemplate" href="182643.htm" target="_self">Параметры задачи поиска уязвимостей и требуемых обновлений.</a></li></ul></li></ul><p class="scenariolistcontinue">При необходимости <a id="h20584" class="crossreferencetemplate" href="3772.htm" target="_self">создайте дополнительные задачи</a> управления приложениями &quot;Лаборатории Касперского&quot;, установленными на клиентских устройствах.</p> </li><li class="scenariolistnumber">Оценка и ограничение загрузки событий в базу данных<p class="scenariolistcontinue">Информация о событиях, которые возникают во время работы управляемых приложений, передается с клиентского устройства и регистрируется в базе данных Сервера администрирования. Чтобы снизить нагрузку на Сервер администрирования, оцените и ограничьте максимальное количество событий, которые могут <a id="h179350" class="crossreferencetemplate" href="159941.htm" target="_self">храниться в базе данных</a>.</p> <p class="scenariolistcontinue">Инструкции:</p> <ul class="scenariolistbullet2"><li class="scenariolistbullet2">Консоль администрирования: <a id="h181229" class="englishcrossreferencetemplate" href="181228.htm" target="_self">Настройка максимального количества событий</a>.</li><li class="scenariolistbullet2">Kaspersky Security Center Web Console: <a id="h179351" class="crossreferencetemplate" href="176098.htm" target="_self">Настройка максимального количества событий</a>.</li></ul></li></ol><p class="introheading">Результаты</p>
+<p class="bodytext">После завершения этого сценария ваша сеть будет защищена благодаря настройке приложений &quot;Лаборатории Касперского&quot;, задач и событий, получаемых Сервером администрирования:</p>
+<ul class="listbullet1"><li class="listbullet1"> Приложения &quot;Лаборатории Касперского&quot; настроены в соответствии с политиками и профилями политик.</li><li class="listbullet1"> Управление приложениями осуществляется с помощью набора задач.</li><li class="listbullet1">Задано максимальное количество событий, которые могут храниться в базе данных.</li></ul><p class="bodytext">После завершения настройки защиты сети вы можете приступить к <a id="h180903" class="englishcrossreferencetemplate" href="180689.htm" target="_self">настройке регулярных обновлений баз и приложений &quot;Лаборатории Касперского&quot;</a>.</p>
+<p class="bodytext">Подробнее о настройке автоматического ответа на угрозы, обнаруженных Kaspersky Sandbox, см. в <a class="hyperlinktemplate" href="https://support.kaspersky.com/KSB/2.0/ru-RU/189425.htm" target="_blank">справке Kaspersky Sandbox 2.0</a>. </p>
+<p class="bodytext"></p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td>
+<p class="relatedheading">См. также:</p><p class="relateditem"><a href="166156.htm" target="_self">Сценарий: установка и первоначальная настройка Kaspersky Security Center Web Console</a></p><p class="relateditem"><a href="180689.htm" target="_self">Сценарий: регулярное обновление баз и приложений &quot;Лаборатории Касперского&quot;</a></p><p class="relateditem"><a href="153504.htm" target="_self">Основной сценарий установки</a></p></td>
+</tr>
+</table>
+
+
+	<a href="#" class="bt-home">В начало</a>
+	</div>
+</body>
+
+</html>

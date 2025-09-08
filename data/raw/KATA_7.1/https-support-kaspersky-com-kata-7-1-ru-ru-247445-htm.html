@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="maximum-scale=1.0" />
+    <title> Распределенное решение и мультитенантность </title>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MPK6ZG');</script>
+	<!-- End Google Tag Manager -->
+    <script type="text/javascript" src="../langs.js"></script>
+    <script type="text/javascript">
+        !function ( w, d ) {
+            var scriptsPath="/localization/";
+            if(w.location.pathname.match(/title\.htm$/)){scriptsPath="./js/"}d.writeln("\x3Cscript type='text/javascript' src='"+scriptsPath+d.documentElement.lang+".js'>\x3C/script>");
+        }( window, document );
+    </script>
+    <script type="text/javascript" src="toc.js"></script>
+    
+    <script type="text/javascript" src="aiconverter_result.js"></script>
+    <link rel="stylesheet" type='text/css' href="typography.css"/>
+    <link rel="stylesheet" type='text/css' href="styles.css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="favicon.png" type="image/png"/>
+
+
+            <!--[if lte IE 9]>
+                <link rel="stylesheet" type="text/css" href="bootstrap.css">
+            <![endif]-->
+            <!--[if lte IE 8]>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+            <![endif]-->
+            </head>
+
+<body id="who-content" class="no-js">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPK6ZG" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<noscript class="no-js__message">
+	<a href="https://support.microsoft.com/ru-ru/kb/3135465" class="no-js__link">Пожалуйста, включите JavaScript в браузере!</a>
+	</noscript>
+	<div class="cont">
+	<h1 id="t247445" class="heading1">Распределенное решение и мультитенантность</h1>
+<p class="bodytext">Вы можете настраивать параметры каждого компонента Central Node отдельно или управлять несколькими компонентами централизованно в режиме распределенного решения.</p>
+<p class="bodytext">Распределенное решение представляет собой двухуровневую иерархию серверов с установленными компонентами Central Node. В этой структуре выделяется главный сервер управления <em class="emphasischaracter">&#8211;</em> <em class="emphasischaracter">Primary Central Node (PCN)</em> и подчиненные серверы <em class="emphasischaracter">&#8211; Secondary Central Node (SCN)</em>. Для взаимодействия серверов требуется подключить SCN к PCN.</p>
+<p class="bodytext">Если вы развернули компонент Central Node в виде кластера, весь кластер выполняет роль PCN или SCN.</p>
+<p class="bodytext">PCN и SCN осуществляют проверку файлов и объектов с помощью тех же технологий, что и <a id="h248357" class="crossreferencetemplate" href="247494.htm" target="_self">компонент Central Node</a>, управляемый отдельно.</p>
+<p class="bodytext">В распределенном решении вы можете централизованно управлять следующими функциональными областями приложения:</p>
+<ul class="listbullet1"><li class="listbullet1">Пользователи.</li><li class="listbullet1">Алерты.</li><li class="listbullet1">Поиск угроз.</li><li class="listbullet1">Задачи.</li><li class="listbullet1">Политики.</li><li class="listbullet1">Пользовательские правила.</li><li class="listbullet1">Хранилище.</li><li class="listbullet1">Endpoint Agents, в том числе сетевая изоляция хостов.</li><li class="listbullet1">Отчеты.</li></ul><p class="bodytext">Если вы поддерживаете несколько организаций или филиалов одной организации, вы можете использовать приложение в режиме мультитенантности.</p>
+<p class="bodytext">Мультитенантность - это режим работы, при котором приложение используется для защиты инфраструктуры нескольких организаций или филиалов одной организации (далее также &quot;<a id="h230315" class="glossaryhtmllinktemplate" href="javascript:void(0)" onmouseover="lngAction=window.setInterval('showPopup(\'230315\',\'h230315\')',500)" onmouseout="window.clearInterval(lngAction);hidePopup('230315')" target="_self">тенантов</a>&quot;) одновременно. Вы можете установить Kaspersky Anti Targeted Attack Platform на один или несколько серверов Central Node для каждого тенанта. Каждый тенант может работать с приложением независимо от других тенантов. Поставщик услуг может работать с данными нескольких тенантов.</p>
+<div id="d230315" class="popuponhover" style="display:none"><p class="bodytext">Отдельная организация или филиал организации, которому предоставляется решение Kaspersky Anti Targeted Attack Platform.</p>
+</div><p class="warningbody">Количество одновременных сеансов работы с приложением под одной учетной записью ограничено одним IP-адресом. При попытке входа в приложение под этим же именем пользователя с другого IP-адреса первый сеанс работы с приложением завершается.</p>
+<p class="spacer"></p>
+<p class="bodytext">Если вы используете режим распределенного решения и мультитенантности, ограничение действует для каждого сервера PCN и SCN независимо друг от друга.</p>
+<p class="picture"><img id="f213735" src="kata_distributed.png" class="linkedpngfiletemplate" alt="kata_distributed" vspace="0" hspace="0" align="bottom" border="0"></p>
+<p class="picturename">Принцип работы приложения в режиме распределенного решения</p>
+<p class="bodytext">Вы можете использовать режим распределенного решения и мультитенантности в следующих случаях:</p>
+<ul class="listbullet1"><li class="listbullet1">для защиты более 10 000 хостов тенанта;</li><li class="listbullet1">для централизованного управления приложением в разных подразделениях тенантов;</li><li class="listbullet1">для централизованного управления приложением на серверах нескольких тенантов;</li><li class="listbullet1">для обработки сетевого трафика на максимальной скорости 10 Гбит/с при наличии в сети более одного сегмента с пропускной способностью 10 Гбит/с и при необходимости обрабатывать трафик в этих сегментах.</li></ul><p class="warningbody">При переключении приложения в режим распределенного решения и мультитенантности на серверах с ролью SCN все ранее добавленные <a id="h272086" class="crossreferencetemplate" href="272052.htm" target="_self">лицензионные ключи</a> удаляются. Каждый подключенный SCN получает ключ от PCN. Если для PCN используется полная функциональность приложения (ключ KATA и KEDR), а для SCN неполная (только ключ KATA или только ключ KEDR), в связи с увеличением объема данных возможно превышение допустимого уровня нагрузки на сервер SCN. Если для PCN используется неполная функциональность приложения (только ключ KATA или только ключ KEDR), а для SCN полная (ключ KATA и KEDR), часть функционала приложения будет недоступна.</p>
+<p class="attentionbody">Управление лицензионными ключами будет доступно только на PCN.</p>
+<p class="bodytext">Вы можете развернуть приложение в режиме распределенного решения и мультитенантности по следующим сценариям:</p>
+<ul class="listbullet1"><li class="listbullet1">Установить компонент Central Node на новых серверах и назначить этим серверам роли PCN и SCN.</li><li class="listbullet1">Назначить роли PCN и SCN серверам с ранее установленным компонентом Central Node.<p class="listcontinue1">В этом случае вам требуется обновить компонент Central Node до версии 7.1.1.</p>
+<p class="warningcontinue1">Перед переключением серверов с установленными компонентами Central Node в режим распределенного решения рекомендуется ознакомиться с <a id="h248358" class="crossreferencetemplate" href="247813.htm" target="_self">изменениями</a>, которые произойдут в системе после смены режима работы. Назначение серверу роли PCN является необратимым.</p>
+</li></ul><table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width= "302">
+<p class="relatedheading">В этом разделе справки</p><p class="relateditem"><a href="175543.htm" target="_self">Сценарий перехода в режим распределенного решения и мультитенантности</a></p><p class="relateditem"><a href="247813.htm" target="_self">Изменения в параметрах приложения при переходе в режим распределенного решения и мультитенантности</a></p><p class="relateditem"><a href="247894.htm" target="_self">Назначение серверу роли PCN</a></p><p class="relateditem"><a href="247895.htm" target="_self">Назначение серверу роли SCN</a></p><p class="relateditem"><a href="247897.htm" target="_self">Просмотр информации о тенантах, серверах PCN и SCN</a></p><p class="relateditem"><a href="247898.htm" target="_self">Добавление тенанта на сервере PCN</a></p><p class="relateditem"><a href="247899.htm" target="_self">Удаление тенанта на сервере PCN</a></p><p class="relateditem"><a href="247900.htm" target="_self">Изменение названия тенанта на сервере PCN</a></p><p class="relateditem"><a href="298173.htm" target="_self">Восстановление подключения SCN к PCN</a></p><p class="relateditem"><a href="247901.htm" target="_self">Отключение SCN от PCN</a></p><p class="relateditem"><a href="247902.htm" target="_self">Изменения в параметрах приложения при отключении SCN от PCN</a></p></td>
+</tr>
+</table>
+
+
+	<a href="#" class="bt-home">В начало</a>
+	</div>
+</body>
+
+</html>
