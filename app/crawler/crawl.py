@@ -119,7 +119,7 @@ def fetch(url: str, client: httpx.Client) -> str | None:
 
 def crawl_from_seed(base: str, product: str, version: str, limit: int = 50) -> List[str]:
     urls: List[str] = []
-    with httpx.Client(headers={"User-Agent": "K-RAG/0.1"}) as client:
+    with httpx.Client(headers={"User-Agent": "K-RAG/0.1"}, timeout=settings.request_timeout) as client:
         html = fetch(base, client)
         if html:
             urls.append(base)
@@ -146,12 +146,12 @@ def crawl_depth1() -> List[Dict]:
                     continue
                 
                 collected: List[str] = []
-                collected.extend(crawl_from_seed(url, product, version, limit=30))
+                collected.extend(crawl_from_seed(url, product, version, limit=settings.crawl_seed_limit))
                 
-                if len(collected) < 15:
-                    collected.extend(discover_via_search(product, version, limit=30))
-                if len(collected) < 15:
-                    collected.extend(discover_from_sitemap(product, version))
+                if len(collected) < settings.crawl_seed_limit // 2:
+                    collected.extend(discover_via_search(product, version, limit=settings.crawl_search_limit))
+                if len(collected) < settings.crawl_seed_limit // 2:
+                    collected.extend(discover_from_sitemap(product, version)[: settings.crawl_sitemap_limit])
                 
                 seen: Set[str] = set()
                 urls: List[str] = []
@@ -159,7 +159,7 @@ def crawl_depth1() -> List[Dict]:
                     if u not in seen:
                         seen.add(u)
                         urls.append(u)
-                    if len(urls) >= 40:
+                    if len(urls) >= settings.crawl_max_urls:
                         break
                 
                 for page_url in urls:

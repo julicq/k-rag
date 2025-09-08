@@ -16,11 +16,12 @@ def load_chunks() -> List[Dict]:
     return items
 
 
-def embed_texts(texts: List[str], batch: int = 32) -> np.ndarray:
+def embed_texts(texts: List[str], batch: int | None = None) -> np.ndarray:
     client = OllamaClient()
     vecs: List[np.ndarray] = []
-    for i in range(0, len(texts), batch):
-        batch_texts = texts[i : i + batch]
+    bsz = batch or settings.embed_batch
+    for i in range(0, len(texts), bsz):
+        batch_texts = texts[i : i + bsz]
         emb = client.embed(batch_texts)
         emb = emb / (np.linalg.norm(emb, axis=1, keepdims=True) + 1e-12)
         vecs.append(emb.astype(np.float32))

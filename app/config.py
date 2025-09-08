@@ -18,6 +18,14 @@ class Settings(BaseSettings):
     topk: int = Field(default=15, alias="TOPK")
     topn_context: int = Field(default=3, alias="TOPN_CONTEXT")
 
+    embed_batch: int = Field(default=32, alias="EMBED_BATCH")
+
+    request_timeout: float = Field(default=30.0, alias="REQUEST_TIMEOUT")
+    crawl_seed_limit: int = Field(default=30, alias="CRAWL_SEED_LIMIT")
+    crawl_search_limit: int = Field(default=30, alias="CRAWL_SEARCH_LIMIT")
+    crawl_sitemap_limit: int = Field(default=100, alias="CRAWL_SITEMAP_LIMIT")
+    crawl_max_urls: int = Field(default=40, alias="CRAWL_MAX_URLS")
+
     api_host: str = Field(default="0.0.0.0", alias="API_HOST")
     api_port: int = Field(default=8000, alias="API_PORT")
 
@@ -30,7 +38,7 @@ class Settings(BaseSettings):
     )
 
     class Config:
-        env_file = ".env"
+        env_file = (".env", ".env.example")
         case_sensitive = False
 
 
